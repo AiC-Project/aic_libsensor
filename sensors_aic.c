@@ -437,7 +437,7 @@ static int parse_sensors_string(char* buff, SensorPoll* data)
 #include "recv_protobuf.h"
 
 static int s_clients[MAX_NUM_SENSORS];
-static int64_t s_delay = 1000000;
+static int64_t s_delay = 100000;
 
 static int start_server(uint16_t port)
 {
